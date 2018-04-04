@@ -1,0 +1,44 @@
+nav {
+  width: 100%;
+  float: left;
+  margin: 0 0 1em 0;
+  padding: 0;
+  background-color: #7E8987;
+}
+
+nav ul {
+  list-style: none;
+  width: 700px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  padding: 8px 15px;
+  text-decoration: none;
+  border-left: solid 1px #C2CFB2;
+  color: #C2CFB2;
+}
+
+nav ul li a:hover {
+  color: #DDD1C7;
+  background-color: #8DB580;
+}
+
+nav ul li:first-child a {
+  border-left: none;
+}
+
+main {
+  background-color: white;
+}
+
+body {
+  background-color: #4B4A67;
+}
+/*# sourceMappingURL=styles.css.map */

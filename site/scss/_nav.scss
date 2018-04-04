@@ -1,0 +1,35 @@
+nav {
+    width: 100%;
+    float: left;
+    margin: 0 0 1em 0;
+    padding: 0;
+    background-color: $site-col-1;
+
+    ul {
+        list-style: none;
+        width: 700px;
+        margin: 0 auto;
+        padding: 0;
+
+        li {
+            float: left;
+            
+            a{
+                display: block;
+                padding: 8px 15px;
+                text-decoration: none;
+                border-left: solid 1px $site-col-3;
+                color: $site-col-3;
+            }
+
+            a:hover {
+                color:$site-col-4;
+                background-color: $site-col-2;
+            }
+        }
+
+        li:first-child a {
+            border-left:none;
+        }
+    }
+}
