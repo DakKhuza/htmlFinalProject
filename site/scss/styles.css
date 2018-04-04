@@ -1,4 +1,4 @@
-nav {
+.main-nav {
   width: 100%;
   float: left;
   margin: 0 0 1em 0;
@@ -6,18 +6,18 @@ nav {
   background-color: #7E8987;
 }
 
-nav ul {
+.main-nav ul {
   list-style: none;
   width: 700px;
   margin: 0 auto;
   padding: 0;
 }
 
-nav ul li {
+.main-nav ul li {
   float: left;
 }
 
-nav ul li a {
+.main-nav ul li a {
   display: block;
   padding: 8px 15px;
   text-decoration: none;
@@ -25,20 +25,81 @@ nav ul li a {
   color: #C2CFB2;
 }
 
-nav ul li a:hover {
+.main-nav ul li a:hover {
   color: #DDD1C7;
   background-color: #8DB580;
 }
 
-nav ul li:first-child a {
+.main-nav ul li:first-child a {
   border-left: none;
 }
 
+.calendar-nav {
+  width: 900px;
+  margin: auto auto 1em auto;
+  padding: 0;
+  background-color: #7E8987;
+}
+
+.calendar-nav ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+}
+
+.calendar-nav ul li {
+  flex-grow: 1;
+  width: 900px;
+  text-align: center;
+  padding: 15px 0;
+  color: #C2CFB2;
+  border: solid 1px #C2CFB2;
+}
+
 main {
-  background-color: white;
+  margin: auto;
 }
 
 body {
   background-color: #4B4A67;
+}
+
+.calendar h1 {
+  text-align: center;
+  color: #DDD1C7;
+}
+
+.days {
+  width: 900px;
+  margin: auto;
+  padding: 0;
+  background-color: #7E8987;
+}
+
+.days ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+}
+
+.days ul li {
+  flex-grow: 1;
+  width: 900px;
+  text-align: center;
+  color: #C2CFB2;
+  border: solid 1px #DDD1C7;
+}
+
+.day {
+  height: 140px;
+  padding: 10px;
+  text-align: left;
+}
+
+.content {
+  height: 500px;
+  background-color: #8DB580;
 }
 /*# sourceMappingURL=styles.css.map */
