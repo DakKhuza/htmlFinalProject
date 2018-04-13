@@ -28,6 +28,7 @@
                 padding: 2px;
                 margin: 0;
                 color: $site-col-4;
+                text-align: center;
                 border-bottom: solid 2px $site-col-4;
             }
             .calInName {
@@ -35,6 +36,9 @@
                 padding-top: 20px;
                 border: none;
             }
+        }
+        .dayName {
+            display: none;
         }
         .calEmpty {
             border-color: $site-col-0;
@@ -49,4 +53,49 @@
     text-align: left;
     color: white;
     //background-color: $site-col-4;
+}
+
+@media only screen and (max-width: 600px) {
+    .days {
+        width: 500px;
+        margin: auto;
+        padding: 0;
+        //background-color: $site-col-1;
+        ul {
+            list-style: none;
+            //margin: 0 auto;
+            padding: 0;
+            display: inline;
+    
+            li {
+                flex-grow: 1;
+                width: $calendar-width-small;
+                text-align: center;
+                color: $site-col-3;
+                border: solid 1px $site-col-4;
+                background-color: $site-col-1;
+                p {
+                    padding: 2px;
+                    margin: 0;
+                    color: $site-col-4;
+                    border-bottom: solid 2px $site-col-4;
+                    text-align: center;
+                }
+                .calInName {
+                    padding: 0px;
+                    padding-top: 20px;
+                    border: none;
+                    text-align: left;
+                }
+            }
+            .dayName {
+                display: list-item;
+                width: 100%;
+            }
+            .calEmpty {
+                border-color: $site-col-0;
+                background-color: $site-col-0;
+            }
+        }
+    }
 }
