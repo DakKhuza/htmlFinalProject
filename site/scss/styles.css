@@ -96,6 +96,7 @@ body {
   padding: 2px;
   margin: 0;
   color: #DDD1C7;
+  text-align: center;
   border-bottom: solid 2px #DDD1C7;
 }
 
@@ -103,6 +104,10 @@ body {
   padding: 0px;
   padding-top: 20px;
   border: none;
+}
+
+.days ul .dayName {
+  display: none;
 }
 
 .days ul .calEmpty {
@@ -115,6 +120,48 @@ body {
   padding: 10px;
   text-align: left;
   color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .days {
+    width: 500px;
+    margin: auto;
+    padding: 0;
+  }
+  .days ul {
+    list-style: none;
+    padding: 0;
+    display: inline;
+  }
+  .days ul li {
+    flex-grow: 1;
+    width: 500px;
+    text-align: center;
+    color: #C2CFB2;
+    border: solid 1px #DDD1C7;
+    background-color: #7E8987;
+  }
+  .days ul li p {
+    padding: 2px;
+    margin: 0;
+    color: #DDD1C7;
+    border-bottom: solid 2px #DDD1C7;
+    text-align: center;
+  }
+  .days ul li .calInName {
+    padding: 0px;
+    padding-top: 20px;
+    border: none;
+    text-align: left;
+  }
+  .days ul .dayName {
+    display: list-item;
+    width: 100%;
+  }
+  .days ul .calEmpty {
+    border-color: #4B4A67;
+    background-color: #4B4A67;
+  }
 }
 
 .content {
