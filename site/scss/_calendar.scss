@@ -59,8 +59,83 @@
     //background-color: $site-col-4;
 }
 
+.calButton {
+    position: fixed;
+    width: 100%;
+    top: 50px;
+    button {
+        float: right;
+        padding: 5px;
+        margin-right: 20px;
+        margin-top: 30px;
+        background-color: $site-col-1;
+        border: solid white 1px;
+        border-radius: 10px;
+        color: $site-col-4;
+        cursor:pointer;
+        outline: none;
+    }
+    button:hover {
+        background-color: $site-col-2;
+        color: white;
+    }
+}
+
+
+.toggle {
+    .calendar-nav {
+        display: none;
+    }
+
+    .days {
+        width: 500px;
+        margin: auto;
+        padding: 0;
+        //background-color: $site-col-1;
+        ul {
+            list-style: none;
+            //margin: 0 auto;
+            padding: 0;
+            display: inline;
+    
+            li {
+                flex-grow: 1;
+                width: $calendar-width-small;
+                text-align: center;
+                color: $site-col-3;
+                border: solid 1px $site-col-4;
+                background-color: $site-col-1;
+                p {
+                    padding: 2px;
+                    margin: 0;
+                    color: $site-col-4;
+                    border-bottom: solid 2px $site-col-4;
+                    text-align: center;
+                }
+                .calInName {
+                    padding: 0px;
+                    padding-top: 20px;
+                    border: none;
+                    text-align: left;
+                }
+            }
+            .dayName {
+                display: list-item;
+                width: 100%;
+            }
+            .calEmpty {
+                border-color: $site-col-0;
+                background-color: $site-col-0;
+            }
+        }
+    }
+}
 @media only screen and (max-width: 900px) {
     .calendar-nav {
+        display: none;
+    }
+
+    .calButton {
         display: none;
     }
 

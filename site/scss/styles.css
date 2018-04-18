@@ -186,8 +186,85 @@ body {
   color: white;
 }
 
+.calButton {
+  position: fixed;
+  width: 100%;
+  top: 50px;
+}
+
+.calButton button {
+  float: right;
+  padding: 5px;
+  margin-right: 20px;
+  margin-top: 30px;
+  background-color: #7E8987;
+  border: solid white 1px;
+  border-radius: 10px;
+  color: #DDD1C7;
+  cursor: pointer;
+  outline: none;
+}
+
+.calButton button:hover {
+  background-color: #8DB580;
+  color: white;
+}
+
+.toggle .calendar-nav {
+  display: none;
+}
+
+.toggle .days {
+  width: 500px;
+  margin: auto;
+  padding: 0;
+}
+
+.toggle .days ul {
+  list-style: none;
+  padding: 0;
+  display: inline;
+}
+
+.toggle .days ul li {
+  flex-grow: 1;
+  width: 500px;
+  text-align: center;
+  color: #C2CFB2;
+  border: solid 1px #DDD1C7;
+  background-color: #7E8987;
+}
+
+.toggle .days ul li p {
+  padding: 2px;
+  margin: 0;
+  color: #DDD1C7;
+  border-bottom: solid 2px #DDD1C7;
+  text-align: center;
+}
+
+.toggle .days ul li .calInName {
+  padding: 0px;
+  padding-top: 20px;
+  border: none;
+  text-align: left;
+}
+
+.toggle .days ul .dayName {
+  display: list-item;
+  width: 100%;
+}
+
+.toggle .days ul .calEmpty {
+  border-color: #4B4A67;
+  background-color: #4B4A67;
+}
+
 @media only screen and (max-width: 900px) {
   .calendar-nav {
+    display: none;
+  }
+  .calButton {
     display: none;
   }
   .days {
@@ -231,8 +308,84 @@ body {
   }
 }
 
+h1 {
+  text-align: center;
+  color: #DDD1C7;
+}
+
 .content {
-  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
   background-color: #8DB580;
+  height: 100%;
+  padding-bottom: 100px;
+  border: solid #DDD1C7 1px;
+  border-radius: 10px;
+}
+
+.content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid #DDD1C7 2px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.content h2 {
+  text-align: center;
+  border-bottom: solid #C2CFB2 2px;
+}
+
+.content .one {
+  border-right: solid #DDD1C7 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.content .two {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.content .three {
+  border-left: solid #DDD1C7 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.content p {
+  background-color: #DDD1C7;
+  color: black;
+  padding: 10px;
+  border: solid #C2CFB2 1px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .content .one {
+    border-right: none;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .content .two {
+    border-top: solid #DDD1C7 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .content .three {
+    border-left: none;
+    border-top: solid #DDD1C7 1px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

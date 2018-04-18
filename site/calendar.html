@@ -10,6 +10,10 @@
             function myFunction(x) {
                 x.classList.toggle("change");
             }
+            function toggle() {
+                var element = document.getElementById("cal");
+                element.classList.toggle("toggle");
+            }
     </script>
 </head>
 <body>
@@ -39,8 +43,10 @@
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
     </nav>
-     
-    <div class="calendar">
+    <div  class = "calButton">
+        <button onclick="toggle()" unselectable="on">Toggle</button>
+    </div>
+    <div class="calendar" id = "cal">
         <h1>January</h1>   
         <nav class="calendar-nav">
             <ul>
