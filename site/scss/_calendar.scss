@@ -56,6 +56,13 @@
     padding:10px;
     text-align: left;
     color: white;
+    a {
+        text-decoration: none;
+        color: $site-col-0
+    }
+    a:hover {
+        color: $site-col-3
+    }
     //background-color: $site-col-4;
 }
 

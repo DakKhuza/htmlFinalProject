@@ -1,0 +1,17 @@
+.overview {
+    background-color: $site-col-1;
+    padding: 10px;
+    border: solid 2px $site-col-3;
+    border-radius: 10px;
+    color: black;
+    max-width: 960px;
+    margin: auto;
+    h2 {
+        padding: 0px;
+        margin: 0px;
+        color: $site-col-4;
+    }
+    .content {
+        padding-top: 50px;
+    }
+}

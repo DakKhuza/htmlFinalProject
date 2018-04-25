@@ -186,6 +186,15 @@ body {
   color: white;
 }
 
+.day a {
+  text-decoration: none;
+  color: #4B4A67;
+}
+
+.day a:hover {
+  color: #C2CFB2;
+}
+
 .calButton {
   position: fixed;
   width: 100%;
@@ -387,5 +396,114 @@ h1 {
     padding-left: 10px;
     padding-right: 10px;
   }
+}
+
+h1 {
+  text-align: center;
+  color: #DDD1C7;
+}
+
+.staff {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding: 10px;
+  background-color: #8DB580;
+  height: 100%;
+  padding-bottom: 100px;
+  border: solid #DDD1C7 1px;
+  border-radius: 10px;
+  max-width: 960px;
+  margin: auto;
+}
+
+.staff img {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid #DDD1C7 2px;
+  border-radius: 10px;
+}
+
+.staff h2 {
+  text-align: center;
+  border-bottom: solid #C2CFB2 2px;
+}
+
+.staff .one {
+  border-right: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.staff .two {
+  border-top: solid #DDD1C7 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.staff .three {
+  border-left: none;
+  border-top: solid #DDD1C7 1px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.staff p {
+  background-color: #DDD1C7;
+  color: black;
+  padding: 10px;
+  border: solid #C2CFB2 1px;
+  border-radius: 10px;
+}
+
+.resource {
+  background-color: #7E8987;
+  padding: 10px;
+  border: solid 2px #C2CFB2;
+  border-radius: 10px;
+}
+
+.resource-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.resource-list a {
+  text-decoration: none;
+  color: #4B4A67;
+}
+
+.overview {
+  background-color: #7E8987;
+  padding: 10px;
+  border: solid 2px #C2CFB2;
+  border-radius: 10px;
+  color: black;
+  max-width: 960px;
+  margin: auto;
+}
+
+.overview h2 {
+  padding: 0px;
+  margin: 0px;
+  color: #DDD1C7;
+}
+
+.overview .content {
+  padding-top: 50px;
+}
+
+.contact {
+  margin: auto;
+  max-width: 200px;
+  background-color: #7E8987;
+  padding: 20px;
+  border: solid 2px #C2CFB2;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=styles.css.map */

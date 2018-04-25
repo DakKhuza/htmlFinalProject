@@ -1,0 +1,16 @@
+.resource {
+    background-color: $site-col-1;
+    padding: 10px;
+    border: solid 2px $site-col-3;
+    border-radius: 10px;
+}
+.resource-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    a{
+        text-decoration: none;
+        color: $site-col-0
+    }
+}
